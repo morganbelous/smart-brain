@@ -108,7 +108,6 @@ class App extends Component {
             .catch(console.log)
         } else {
           console.log("bad image url")
-          this.setState(Object.assign(this.state.user, { imageUrl: '', box: {} }))
         }
       })
       .catch(err => console.log(err))
