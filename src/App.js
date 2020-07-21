@@ -89,9 +89,6 @@ class App extends Component {
       .then(response => response.json())
       .then(response => {
         if (response != "unable to work with API") {
-          //draw face box
-          this.displayFaceBox(this.calculateFaceLocation(response))
-
           //this is updating entry count for the user
           fetch('https://vast-plains-69794.herokuapp.com/image', {
             method: 'put',
@@ -106,6 +103,8 @@ class App extends Component {
               this.setState(Object.assign(this.state.user, { entries: count }))
             })
             .catch(console.log)
+          //draw face box
+          this.displayFaceBox(this.calculateFaceLocation(response))
         } else {
           console.log("bad image url")
         }
