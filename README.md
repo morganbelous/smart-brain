@@ -10,8 +10,6 @@ Website Link: https://smart-brain2000.herokuapp.com
 
 Backend Github: https://github.com/morganbelous/smart-brain-api
 
-Backend Link: https://vast-plains-69794.herokuapp.com
-
 In the project directory, you can run:
 
 ### `npm start`
